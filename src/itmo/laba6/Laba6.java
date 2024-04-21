@@ -39,8 +39,11 @@ public class Laba6
 
 
 
-        UserChild userChild = new UserChild(25, "Вася");
-        String userChildName = userChild.getName();
-        System.out.println(userChildName);
+        UserParent userParent = new UserParent();
+        userParent.showData();
+
+        UserChild userChild = new UserChild();
+        userChild.showData();
+        userChild.showAge();
     }
 }

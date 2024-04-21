@@ -4,15 +4,17 @@ public class UserChild extends UserParent
 {
     private String name;
 
-    public UserChild(int age, String name)
+    public UserChild()
     {
-        super(age);
-        this.name = name;
+        System.out.print("Введите имя пользователя: ");
+        this.name = scanner.next();
+        System.out.println("");
     }
 
     @Override
-    public String getName()
+    public void showData()
     {
-        return "UserChild" + " " + this.name;
+        System.out.println(this.name);
+        System.out.println("");
     }
 }

@@ -1,20 +1,29 @@
 package itmo.laba6;
 
+import java.util.Scanner;
+
 public class UserParent
 {
     protected int age;
-    public int getAge()
+
+    protected Scanner scanner = new Scanner(System.in);
+
+    public UserParent()
     {
-        return age;
+        System.out.print("Введите возраст пользователя: ");
+        this.age = scanner.nextInt();
+
     }
 
-    UserParent(int age)
+    public void showData()
     {
-        this.age = age;
+        System.out.println(this.age);
+        System.out.println("");
     }
 
-    public String getName()
+    public void showAge()
     {
-        return "UserParent";
+        System.out.println(this.age);
+        System.out.println("");
     }
 }
